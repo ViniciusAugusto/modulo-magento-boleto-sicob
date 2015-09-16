@@ -1,0 +1,10 @@
+<p>Boleto Banc&aacute;rio</p> 
+
+<?php if ($_info = $this->getInfo()):?>
+	<?php if($_order = $_info->getOrder()):?>
+		<?php $orderid = $_order->getId();?>
+		<span style="float:left">
+			<a style="color:#ffb81e" href="<?php echo $this->getUrl('boletosicob/standard/view/order_id/'.$orderid)?>" class="link-cart" onclick="this.target='_blank'" >Clique aqui para reimprimir o Boleto</a>
+		</span>
+	<?php endif;?>
+<?php endif;?>

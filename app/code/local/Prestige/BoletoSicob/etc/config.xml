@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Prestige_BoletoSicob>
+      <version>1.0.0</version>
+      <depends>
+        <Mage_Payment />
+      </depends>
+    </Prestige_BoletoSicob>
+  </modules>
+  
+  <global>
+
+    <models>
+      <boletosicob>
+        <class>Prestige_BoletoSicob_Model</class>
+      </boletosicob>
+    </models>
+
+    <helpers>
+      <boletosicob>
+        <class>Prestige_BoletoSicob_Helper</class>
+      </boletosicob>
+    </helpers>
+
+    <blocks>
+        <boletosicob>
+            <class>Prestige_BoletoSicob_Block</class>
+        </boletosicob>
+    </blocks>
+
+    <resources>
+      <boletosicob_setup>
+        <connection>
+          <use>core_setup</use>
+        </connection>
+      </boletosicob_setup>
+      <boletosicob_write>
+          <connection>
+              <use>core_write</use>
+          </connection>
+      </boletosicob_write>
+      <boletosicob_read>
+          <connection>
+              <use>core_read</use>
+          </connection>
+      </boletosicob_read>
+    </resources>
+
+  </global>
+
+  <frontend>
+    <routers>
+      <boletosicob>
+        <use>standard</use>
+        <args>
+          <module>Prestige_BoletoSicob</module>
+          <frontName>boletosicob</frontName>
+        </args>
+      </boletosicob>
+    </routers>
+  </frontend>
+
+  <default>
+    <payment>
+      <boletosicob>
+        <active>1</active>
+        <model>Prestige_BoletoSicob_Model_Standard</model>
+      </boletosicob>
+    </payment>
+  </default>
+</config> 

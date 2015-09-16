@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <sections>
+        <payment>
+            <groups>
+                <boletosicob translate="label" module="payment">
+                	<label>Boleto Bancário - Banco SICOB</label>
+					<sort_order>670</sort_order>
+					<show_in_default>1</show_in_default>
+					<show_in_website>1</show_in_website>
+					<show_in_store>1</show_in_store>
+					<fields>
+						<active translate="label">
+							<label>Enabled</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_yesno</source_model>
+							<sort_order>1</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>Deseja habilitar o módulo de Boleto Banário do Banco SICOB?</comment>
+						</active>
+						<title translate="label">
+							<label>Title</label>
+							<frontend_type>text</frontend_type>
+							<sort_order>2</sort_order>
+							<show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>0</show_in_store>
+							<comment>Título que deseja que apareça na tela do cliente</comment>
+						</title>
+						<order_status translate="label">
+							<label>Status dos novos pedidos</label>
+							<frontend_type>select</frontend_type>
+							<source_model>adminhtml/system_config_source_order_status_new</source_model>
+					  		<sort_order>3</sort_order>
+					  		<show_in_default>1</show_in_default>
+					  		<show_in_website>1</show_in_website>
+					  		<show_in_store>0</show_in_store>
+							<comment>O Status para os novos pedidos utilizando esse módulo</comment>
+				      	</order_status>
+				      	<numCliente translate="label">
+							<label>Código Cliente</label>
+							<frontend_type>text</frontend_type>
+					  		<sort_order>4</sort_order>
+					  		<show_in_default>1</show_in_default>
+					  		<show_in_website>1</show_in_website>
+					  		<show_in_store>0</show_in_store>
+							<comment>Código do convênio de Comércio Eletrônico fornecido pelo Banco</comment>
+				      	</numCliente>
+				      	<coopCartao translate="label">
+							<label>Coop. Cartão</label>
+							<frontend_type>text</frontend_type>
+					  		<sort_order>4</sort_order>
+					  		<show_in_default>1</show_in_default>
+					  		<show_in_website>1</show_in_website>
+					  		<show_in_store>0</show_in_store>
+							<comment>Código do Cartão Cooperativo</comment>
+				      	</coopCartao>
+				      	<chaveAcessoWeb translate="label">
+							<label>Chave Acesso Web</label>
+							<frontend_type>text</frontend_type>
+					  		<sort_order>4</sort_order>
+					  		<show_in_default>1</show_in_default>
+					  		<show_in_website>1</show_in_website>
+					  		<show_in_store>0</show_in_store>
+							<comment>Chave acesso web fornecido pelo Banco Sicob</comment>
+				      	</chaveAcessoWeb>
+				      	<codMunicipio translate="label">
+							<label>Código do Município</label>
+							<frontend_type>text</frontend_type>
+					  		<sort_order>4</sort_order>
+					  		<show_in_default>1</show_in_default>
+					  		<show_in_website>1</show_in_website>
+					  		<show_in_store>0</show_in_store>
+							<comment>Código do Município fornecido pelo Banco Sicob</comment>
+				      	</codMunicipio>
+					</fields>
+                </boletosicob>
+            </groups>
+        </payment>
+    </sections>
+</config>
