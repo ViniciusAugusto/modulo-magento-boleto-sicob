@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <Prestige_BoletoSicob>
+    <ViniciusCunha_BoletoSicob>
       
       <active>true</active>
       <codePool>local</codePool>
@@ -11,6 +11,6 @@
         <Mage_Payment />
       </depends>
       
-    </Prestige_BoletoSicob>
+    </ViniciusCunha_BoletoSicob>
   </modules>
 </config>

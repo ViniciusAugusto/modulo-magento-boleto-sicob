@@ -9,20 +9,20 @@
  * http://opensource.org/licenses/osl-3.0.php
  *
  * @category   Payment (Pagamento)
- * @package    Prestige_BoletoSicob
+ * @package    ViniciusCunha_BoletoSicob
  * @copyright  Copyright (c) 2015 Vinicius Augusto Cunha
  * @author     Vinicius Augusto Cunha <viniciusaugustocunha@gmail.com>
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 
-class Prestige_BoletoSicob_StandardController extends Mage_Core_Controller_Front_Action
+class ViniciusCunha_BoletoSicob_StandardController extends Mage_Core_Controller_Front_Action
 {
     
 	/**
 	 * Retorna o singleton do Boleto Sicoob
 	 *
-	 * @return Prestige_BoletoSicob_Model_Standard
+	 * @return ViniciusCunhas_BoletoSicob_Model_Standard
 	 */
 	protected  function getBoletoSicob()
 	{

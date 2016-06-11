@@ -9,7 +9,7 @@
  * http://opensource.org/licenses/osl-3.0.php
  *
  * @category   Payment (Pagamento)
- * @package    Prestige_BoletoSicob
+ * @package    ViniciusCunha_BoletoSicob
  * @copyright  Copyright (c) 2015 Vinicius Augusto Cunha
  * @author     Vinicius Augusto Cunha <viniciusaugustocunha@gmail.com>
  * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
@@ -17,7 +17,7 @@
 
 
 
-class Prestige_BoletoSicob_Model_Standard extends Mage_Payment_Model_Method_Abstract {
+class ViniciusCunha_BoletoSicob_Model_Standard extends Mage_Payment_Model_Method_Abstract {
 
 	protected $_code = 'boletosicob';
 	protected $_order = null;

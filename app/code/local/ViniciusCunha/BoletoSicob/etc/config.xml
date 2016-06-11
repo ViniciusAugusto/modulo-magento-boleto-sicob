@@ -1,31 +1,31 @@
 <?xml version="1.0"?>
 <config>
   <modules>
-    <Prestige_BoletoSicob>
+    <ViniciusCunha_BoletoSicob>
       <version>1.0.0</version>
       <depends>
         <Mage_Payment />
       </depends>
-    </Prestige_BoletoSicob>
+    </ViniciusCunha_BoletoSicob>
   </modules>
   
   <global>
 
     <models>
       <boletosicob>
-        <class>Prestige_BoletoSicob_Model</class>
+        <class>ViniciusCunha_BoletoSicob_Model</class>
       </boletosicob>
     </models>
 
     <helpers>
       <boletosicob>
-        <class>Prestige_BoletoSicob_Helper</class>
+        <class>ViniciusCunha_BoletoSicob_Helper</class>
       </boletosicob>
     </helpers>
 
     <blocks>
         <boletosicob>
-            <class>Prestige_BoletoSicob_Block</class>
+            <class>ViniciusCunha_BoletoSicob_Block</class>
         </boletosicob>
     </blocks>
 
@@ -54,7 +54,7 @@
       <boletosicob>
         <use>standard</use>
         <args>
-          <module>Prestige_BoletoSicob</module>
+          <module>ViniciusCunha_BoletoSicob</module>
           <frontName>boletosicob</frontName>
         </args>
       </boletosicob>
@@ -65,7 +65,7 @@
     <payment>
       <boletosicob>
         <active>1</active>
-        <model>Prestige_BoletoSicob_Model_Standard</model>
+        <model>ViniciusCunha_BoletoSicob_Model_Standard</model>
       </boletosicob>
     </payment>
   </default>
